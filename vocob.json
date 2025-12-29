@@ -1,40 +1,604 @@
 [
-  // 1. THE DEAL: HR, SALARY & NEGOTIATION (20 TERMS)
-  { id: '1', term: "CTC (Cost to Company)", category: "The Deal", definition: "Total annual expense an employer incurs on an employee (Salary + Benefits).", basic: "My total salary is 10 Lakhs.", pro: "The offered CTC is competitive, though I'd like a breakdown of the fixed and variable components.", insight: "Insight: Your monthly 'In-Hand' is usually 15-20% lower than CTC/12 due to PF and taxes." },
-  { id: '2', term: "Clawback Clause", category: "The Deal", definition: "A rule requiring an employee to return a bonus if they leave the company before a set time.", basic: "I have to return my bonus if I quit early.", pro: "I am reviewing the clawback provisions to understand the retention period.", insight: "Warning: Check this before spending your joining bonus!" },
-  { id: '3', term: "Gross Salary", category: "The Deal", definition: "The salary amount before taxes and other deductions.", basic: "My salary before tax.", pro: "Is the gross salary inclusive of the transport allowance?", insight: "Note: Gross includes your basic pay + all allowances." },
-  { id: '4', term: "Net Pay (In-Hand)", category: "The Deal", definition: "The actual amount credited to your bank account after all deductions.", basic: "The money I get in my bank.", pro: "What will be my net take-home after statutory deductions?", insight: "This is what actually matters for your monthly budget." },
-  { id: '5', term: "Variable Pay", category: "The Deal", definition: "Performance-linked bonus; it changes based on individual or company targets.", basic: "Bonus money.", pro: "Could you clarify the criteria for the variable pay component?", insight: "Tip: Don't rely on this for your fixed monthly bills." },
-  { id: '6', term: "Fixed Pay", category: "The Deal", definition: "The guaranteed base component of your salary.", basic: "My regular pay.", pro: "I'm looking for a higher fixed-pay ratio in the total compensation.", insight: "Higher fixed pay offers better financial security." },
-  { id: '7', term: "ESOPs", category: "The Deal", definition: "Employee Stock Ownership Plan; options to buy company shares.", basic: "I have company shares.", pro: "I am interested in learning more about the ESOPs and the strike price.", insight: "Great for long-term wealth building in startups." },
-  { id: '8', term: "Vesting Period", category: "The Deal", definition: "The duration you must stay with the company to earn the right to your stock options.", basic: "When do I own my shares?", pro: "What is the vesting schedule for the equity component?", insight: "Commonly 4 years with a 1-year cliff." },
-  { id: '9', term: "Gratuity", category: "The Deal", definition: "A statutory benefit paid after 5+ years of continuous service.", basic: "Reward for staying long.", pro: "Is the gratuity contribution factored into the CTC?", insight: "You only get this if you stay with one company for 5 years." },
-  { id: '10', term: "Provident Fund (PF)", category: "The Deal", definition: "A mandatory retirement savings scheme.", basic: "My savings for old age.", pro: "Does the company match the employee PF contribution?", insight: "This is forced savings; good for your future." },
-  { id: '11', term: "Notice Period", category: "The Deal", definition: "The time you must work after resigning.", basic: "Time before I can leave.", pro: "Is there an option for a notice period buyout?", insight: "Standard is usually 30, 60, or 90 days." },
-  { id: '12', term: "Retention Bonus", category: "The Deal", definition: "Payment made to keep you in the company for a fixed term.", basic: "Pay for not quitting.", pro: "Is the retention bonus paid upfront or at the end of the year?", insight: "Often comes with a clawback clause." },
-  { id: '13', term: "Relocation Allowance", category: "The Deal", definition: "One-time payment for moving to a new city for the job.", basic: "Moving money.", pro: "Does the relocation package cover temporary accommodation?", insight: "Keep all your bills/receipts to claim this." },
-  { id: '14', term: "Stipend", category: "The Deal", definition: "Fixed payment for interns or trainees.", basic: "Intern pay.", pro: "Will the stipend be revised upon successful completion of the internship?", insight: "Lower than a salary, but meant to cover basic expenses." },
-  { id: '15', term: "Perks", category: "The Deal", definition: "Non-monetary benefits like gym, meals, or insurance.", basic: "Office extras.", pro: "What wellness perks are available to full-time employees?", insight: "Perks can save you a lot of personal money." },
-  { id: '16', term: "Appraisal", category: "The Deal", definition: "Periodic formal assessment of your performance.", basic: "Performance review.", pro: "When is the next appraisal cycle for new joiners?", insight: "This is when you negotiate your salary hike." },
-  { id: '17', term: "Escalation", category: "The Deal", definition: "Moving a problem to a higher authority.", basic: "Telling the boss about a problem.", pro: "If the issue persists, we may need to initiate an escalation.", insight: "Use sparingly; try to solve things yourself first." },
-  { id: '18', term: "Probation", category: "The Deal", definition: "The initial 'test' period for a new hire.", basic: "Trial period.", pro: "Will I receive full benefits during my probation period?", insight: "Perform your best here to secure your permanent role." },
-  { id: '19', term: "BGV", category: "The Deal", definition: "Background Verification of your past records.", basic: "The background check.", pro: "I have the documentation ready for the BGV process.", insight: "Be honest. Lies on resumes are usually caught here." },
-  { id: '20', term: "Counter-offer", category: "The Deal", definition: "A better offer made in response to an existing one.", basic: "A better deal.", pro: "I received a counter-offer from my current employer.", insight: "Risky move, but can increase your value." },
-
-  // 2. THE PITCH: INTERVIEWS & GD (20 TERMS)
-  { id: '21', term: "Synthesize", category: "The Pitch", definition: "Combining diverse points into a single summary.", basic: "Summing up.", pro: "If I were to synthesize the points raised so far...", insight: "GD Masterstroke: Summarize the group to lead." },
-  { id: '22', term: "Quantifiable", category: "The Pitch", definition: "Achievements backed by numbers.", basic: "I did a lot.", pro: "I deliver quantifiable results, like a 20% increase in efficiency.", insight: "Numbers impress interviewers more than adjectives." },
-  { id: '23', term: "Core Competency", category: "The Pitch", definition: "Your primary professional strength.", basic: "What I'm good at.", pro: "My core competency is in strategic problem solving.", insight: "Know your top 3 'cores' before any interview." },
-  { id: '24', term: "Nuance", category: "The Pitch", definition: "Subtle differences in meaning or opinion.", basic: "Small details.", pro: "We need to consider the nuances of this market shift.", insight: "Shows you think deeply about complex issues." },
-  { id: '25', term: "Consensus", category: "The Pitch", definition: "General agreement among a group.", basic: "Everyone agrees.", pro: "Have we reached a consensus on the project timeline?", insight: "Crucial for GDs to move the discussion forward." },
-  { id: '26', term: "Mitigate", category: "The Pitch", definition: "To make a problem less severe.", basic: "Fixing things.", pro: "How can we mitigate the risks associated with this launch?", insight: "Focus on solutions, not just problems." },
-  { id: '27', term: "Leverage", category: "The Pitch", definition: "Using a strength to achieve a better result.", basic: "Using my skills.", pro: "We should leverage our existing data to optimize the process.", insight: "Corporate way to say 'use effectively'." },
-  { id: '28', term: "Value-Add", category: "The Pitch", definition: "The unique benefit you bring to a role.", basic: "Why hire me.", pro: "My primary value-add is my experience in cross-platform testing.", insight: "The 'so what?' of your resume." },
-  { id: '29', term: "Proficiency", category: "The Pitch", definition: "High level of skill in an area.", basic: "I'm good at this.", pro: "I have full proficiency in Python and Java.", insight: "Use this to describe technical skills." },
-  { id: '30', term: "Transferable Skills", category: "The Pitch", definition: "Skills useful across different jobs.", basic: "Skills I can use anywhere.", pro: "Communication is one of my strongest transferable skills.", insight: "Great for freshers changing domains." },
-  { id: '31', term: "STAR Method", category: "The Pitch", definition: "Framework for behavioral answers (Situation, Task, Action, Result).", basic: "How I tell stories.", pro: "I'll use the STAR method to describe my leadership experience.", insight: "Gold standard for interview storytelling." },
-  { id: '32', term: "Aptitude", category: "The Pitch", definition: "Natural ability to learn or do something.", basic: "My talent.", pro: "I have a strong aptitude for numerical analysis.", insight: "Companies test this in the first round." },
-  { id: '33', term: "Culture Fit", category: "The Pitch", definition: "Aligning with company values.", basic: "Do I like them?", pro: "I believe my work ethic makes me a strong culture fit for this team.", insight: "Sometimes more important than technical skills." },
+  {
+    "id": "1",
+    "term": "CTC (Cost to Company)",
+    "category": "The Deal",
+    "definition": "Total annual expense an employer incurs on an employee (Salary + Benefits).",
+    "basic": "My total salary is 10 Lakhs.",
+    "pro": "The offered CTC is competitive, though I'd like a breakdown of the fixed and variable components.",
+    "insight": "Insight: Your monthly 'In-Hand' is usually 15-20% lower than CTC/12 due to PF and taxes."
+  },
+  {
+    "id": "2",
+    "term": "Clawback Clause",
+    "category": "The Deal",
+    "definition": "A rule requiring an employee to return a bonus if they leave the company before a set time.",
+    "basic": "I have to return my bonus if I quit early.",
+    "pro": "I am reviewing the clawback provisions to understand the retention period.",
+    "insight": "Warning: Check this before spending your joining bonus!"
+  },
+  {
+    "id": "3",
+    "term": "Gross Salary",
+    "category": "The Deal",
+    "definition": "The salary amount before taxes and other deductions.",
+    "basic": "My salary before tax.",
+    "pro": "Is the gross salary inclusive of the transport allowance?",
+    "insight": "Note: Gross includes your basic pay + all allowances."
+  },
+  {
+    "id": "4",
+    "term": "Net Pay (In-Hand)",
+    "category": "The Deal",
+    "definition": "The actual amount credited to your bank account after all deductions.",
+    "basic": "The money I get in my bank.",
+    "pro": "What will be my net take-home after statutory deductions?",
+    "insight": "This is what actually matters for your monthly budget."
+  },
+  {
+    "id": "5",
+    "term": "Variable Pay",
+    "category": "The Deal",
+    "definition": "Performance-linked bonus; it changes based on individual or company targets.",
+    "basic": "Bonus money.",
+    "pro": "Could you clarify the criteria for the variable pay component?",
+    "insight": "Tip: Don't rely on this for your fixed monthly bills."
+  },
+  {
+    "id": "6",
+    "term": "Fixed Pay",
+    "category": "The Deal",
+    "definition": "The guaranteed base component of your salary.",
+    "basic": "My regular pay.",
+    "pro": "I'm looking for a higher fixed-pay ratio in the total compensation.",
+    "insight": "Higher fixed pay offers better financial security."
+  },
+  {
+    "id": "7",
+    "term": "ESOPs",
+    "category": "The Deal",
+    "definition": "Employee Stock Ownership Plan; options to buy company shares.",
+    "basic": "I have company shares.",
+    "pro": "I am interested in learning more about the ESOPs and the strike price.",
+    "insight": "Great for long-term wealth building in startups."
+  },
+  {
+    "id": "8",
+    "term": "Vesting Period",
+    "category": "The Deal",
+    "definition": "The duration you must stay with the company to earn the right to your stock options.",
+    "basic": "When do I own my shares?",
+    "pro": "What is the vesting schedule for the equity component?",
+    "insight": "Commonly 4 years with a 1-year cliff."
+  },
+  {
+    "id": "9",
+    "term": "Gratuity",
+    "category": "The Deal",
+    "definition": "A statutory benefit paid after 5+ years of continuous service.",
+    "basic": "Reward for staying long.",
+    "pro": "Is the gratuity contribution factored into the CTC?",
+    "insight": "You only get this if you stay with one company for 5 years."
+  },
+  {
+    "id": "10",
+    "term": "Provident Fund (PF)",
+    "category": "The Deal",
+    "definition": "A mandatory retirement savings scheme.",
+    "basic": "My savings for old age.",
+    "pro": "Does the company match the employee PF contribution?",
+    "insight": "This is forced savings; good for your future."
+  },
+  {
+    "id": "11",
+    "term": "Notice Period",
+    "category": "The Deal",
+    "definition": "The time you must work after resigning.",
+    "basic": "Time before I can leave.",
+    "pro": "Is there an option for a notice period buyout?",
+    "insight": "Standard is usually 30, 60, or 90 days."
+  },
+  {
+    "id": "12",
+    "term": "Retention Bonus",
+    "category": "The Deal",
+    "definition": "Payment made to keep you in the company for a fixed term.",
+    "basic": "Pay for not quitting.",
+    "pro": "Is the retention bonus paid upfront or at the end of the year?",
+    "insight": "Often comes with a clawback clause."
+  },
+  {
+    "id": "13",
+    "term": "Relocation Allowance",
+    "category": "The Deal",
+    "definition": "One-time payment for moving to a new city for the job.",
+    "basic": "Moving money.",
+    "pro": "Does the relocation package cover temporary accommodation?",
+    "insight": "Keep all your bills/receipts to claim this."
+  },
+  {
+    "id": "14",
+    "term": "Stipend",
+    "category": "The Deal",
+    "definition": "Fixed payment for interns or trainees.",
+    "basic": "Intern pay.",
+    "pro": "Will the stipend be revised upon successful completion of the internship?",
+    "insight": "Lower than a salary, but meant to cover basic expenses."
+  },
+  {
+    "id": "15",
+    "term": "Perks",
+    "category": "The Deal",
+    "definition": "Non-monetary benefits like gym, meals, or insurance.",
+    "basic": "Office extras.",
+    "pro": "What wellness perks are available to full-time employees?",
+    "insight": "Perks can save you a lot of personal money."
+  },
+  {
+    "id": "16",
+    "term": "Appraisal",
+    "category": "The Deal",
+    "definition": "Periodic formal assessment of your performance.",
+    "basic": "Performance review.",
+    "pro": "When is the next appraisal cycle for new joiners?",
+    "insight": "This is when you negotiate your salary hike."
+  },
+  {
+    "id": "17",
+    "term": "Escalation",
+    "category": "The Deal",
+    "definition": "Moving a problem to a higher authority.",
+    "basic": "Telling the boss about a problem.",
+    "pro": "If the issue persists, we may need to initiate an escalation.",
+    "insight": "Use sparingly; try to solve things yourself first."
+  },
+  {
+    "id": "18",
+    "term": "Probation",
+    "category": "The Deal",
+    "definition": "The initial 'test' period for a new hire.",
+    "basic": "Trial period.",
+    "pro": "Will I receive full benefits during my probation period?",
+    "insight": "Perform your best here to secure your permanent role."
+  },
+  {
+    "id": "19",
+    "term": "BGV",
+    "category": "The Deal",
+    "definition": "Background Verification of your past records.",
+    "basic": "The background check.",
+    "pro": "I have the documentation ready for the BGV process.",
+    "insight": "Be honest. Lies on resumes are usually caught here."
+  },
+  {
+    "id": "20",
+    "term": "Counter-offer",
+    "category": "The Deal",
+    "definition": "A better offer made in response to an existing one.",
+    "basic": "A better deal.",
+    "pro": "I received a counter-offer from my current employer.",
+    "insight": "Risky move, but can increase your value."
+  },
+  {
+    "id": "21",
+    "term": "Synthesize",
+    "category": "The Pitch",
+    "definition": "Combining diverse points into a single summary.",
+    "basic": "Summing up.",
+    "pro": "If I were to synthesize the points raised so far...",
+    "insight": "GD Masterstroke: Summarize the group to lead."
+  },
+  {
+    "id": "22",
+    "term": "Quantifiable",
+    "category": "The Pitch",
+    "definition": "Achievements backed by numbers.",
+    "basic": "I did a lot.",
+    "pro": "I deliver quantifiable results, like a 20% increase in efficiency.",
+    "insight": "Numbers impress interviewers more than adjectives."
+  },
+  {
+    "id": "23",
+    "term": "Core Competency",
+    "category": "The Pitch",
+    "definition": "Your primary professional strength.",
+    "basic": "What I'm good at.",
+    "pro": "My core competency is in strategic problem solving.",
+    "insight": "Know your top 3 'cores' before any interview."
+  },
+  {
+    "id": "24",
+    "term": "Nuance",
+    "category": "The Pitch",
+    "definition": "Subtle differences in meaning or opinion.",
+    "basic": "Small details.",
+    "pro": "We need to consider the nuances of this market shift.",
+    "insight": "Shows you think deeply about complex issues."
+  },
+  {
+    "id": "25",
+    "term": "Consensus",
+    "category": "The Pitch",
+    "definition": "General agreement among a group.",
+    "basic": "Everyone agrees.",
+    "pro": "Have we reached a consensus on the project timeline?",
+    "insight": "Crucial for GDs to move the discussion forward."
+  },
+  {
+    "id": "26",
+    "term": "Mitigate",
+    "category": "The Pitch",
+    "definition": "To make a problem less severe.",
+    "basic": "Fixing things.",
+    "pro": "How can we mitigate the risks associated with this launch?",
+    "insight": "Focus on solutions, not just problems."
+  },
+  {
+    "id": "27",
+    "term": "Leverage",
+    "category": "The Pitch",
+    "definition": "Using a strength to achieve a better result.",
+    "basic": "Using my skills.",
+    "pro": "We should leverage our existing data to optimize the process.",
+    "insight": "Corporate way to say 'use effectively'."
+  },
+  {
+    "id": "28",
+    "term": "Value-Add",
+    "category": "The Pitch",
+    "definition": "The unique benefit you bring to a role.",
+    "basic": "Why hire me.",
+    "pro": "My primary value-add is my experience in cross-platform testing.",
+    "insight": "The 'so what?' of your resume."
+  },
+  {
+    "id": "29",
+    "term": "Proficiency",
+    "category": "The Pitch",
+    "definition": "High level of skill in an area.",
+    "basic": "I'm good at this.",
+    "pro": "I have full proficiency in Python and Java.",
+    "insight": "Use this to describe technical skills."
+  },
+  {
+    "id": "30",
+    "term": "Transferable Skills",
+    "category": "The Pitch",
+    "definition": "Skills useful across different jobs.",
+    "basic": "Skills I can use anywhere.",
+    "pro": "Communication is one of my strongest transferable skills.",
+    "insight": "Great for freshers changing domains."
+  },
+  {
+    "id": "31",
+    "term": "STAR Method",
+    "category": "The Pitch",
+    "definition": "Framework for behavioral answers (Situation, Task, Action, Result).",
+    "basic": "How I tell stories.",
+    "pro": "I'll use the STAR method to describe my leadership experience.",
+    "insight": "Gold standard for interview storytelling."
+  },
+  {
+    "id": "32",
+    "term": "Aptitude",
+    "category": "The Pitch",
+    "definition": "Natural ability to learn or do something.",
+    "basic": "My talent.",
+    "pro": "I have a strong aptitude for numerical analysis.",
+    "insight": "Companies test this in the first round."
+  },
+  {
+    "id": "33",
+    "term": "Culture Fit",
+    "category": "The Pitch",
+    "definition": "Aligning with company values.",
+    "basic": "Do I like them?",
+    "pro": "I believe my work ethic makes me a strong culture fit for this team.",
+    "insight": "Sometimes more important than technical skills."
+  },
+  {
+    "id": "34",
+    "term": "Collaborative",
+    "category": "The Pitch",
+    "definition": "Working effectively with a team.",
+    "basic": "Team player.",
+    "pro": "I thrive in a collaborative work environment.",
+    "insight": "Professional version of 'I like working with people'."
+  },
+  {
+    "id": "35",
+    "term": "Proactive",
+    "category": "The Pitch",
+    "definition": "Taking action before being told.",
+    "basic": "Doing it early.",
+    "pro": "I take a proactive approach to identifying bugs.",
+    "insight": "Managers love employees who don't wait for orders."
+  },
+  {
+    "id": "36",
+    "term": "Rebuttal",
+    "category": "The Pitch",
+    "definition": "A counter-argument in a discussion.",
+    "basic": "Disagreeing.",
+    "pro": "I have a brief rebuttal to that point.",
+    "insight": "Keep it polite in GDs: 'I hear you, however...'"
+  },
+  {
+    "id": "37",
+    "term": "Assertion",
+    "category": "The Pitch",
+    "definition": "Stating your point confidently but politely.",
+    "basic": "Being firm.",
+    "pro": "I'd like to make an assertion regarding the budget.",
+    "insight": "Stronger than a 'suggestion'."
+  },
+  {
+    "id": "38",
+    "term": "Facilitate",
+    "category": "The Pitch",
+    "definition": "To make a process easier.",
+    "basic": "Help out.",
+    "pro": "I can facilitate the communication between teams.",
+    "insight": "Excellent for coordination roles."
+  },
+  {
+    "id": "39",
+    "term": "Concise",
+    "category": "The Pitch",
+    "definition": "Giving info clearly and briefly.",
+    "basic": "Short and sweet.",
+    "pro": "Please keep your project update concise.",
+    "insight": "In the corporate world, time is money."
+  },
+  {
+    "id": "40",
+    "term": "Alignment",
+    "category": "The Pitch",
+    "definition": "Being in agreement with a vision.",
+    "basic": "On the same page.",
+    "pro": "Are we in alignment on the next steps?",
+    "insight": "Check this before starting any group project."
+  },
+  {
+    "id": "41",
+    "term": "Liaise",
+    "category": "The Hunt",
+    "definition": "Acting as a bridge between departments.",
+    "basic": "Talking to teams.",
+    "pro": "You will liaise with the marketing and tech teams.",
+    "insight": "Common in Project Management JDs."
+  },
+  {
+    "id": "42",
+    "term": "Stakeholders",
+    "category": "The Hunt",
+    "definition": "People affected by a project.",
+    "basic": "People involved.",
+    "pro": "We need to manage stakeholder expectations.",
+    "insight": "Includes clients, bosses, and users."
+  },
+  {
+    "id": "43",
+    "term": "Deliverables",
+    "category": "The Hunt",
+    "definition": "Quantifiable products/services to be provided.",
+    "basic": "Work to do.",
+    "pro": "What are the key deliverables for this week?",
+    "insight": "The 'output' you are paid for."
+  },
+  {
+    "id": "44",
+    "term": "Cross-functional",
+    "category": "The Hunt",
+    "definition": "Involving different departments.",
+    "basic": "Different teams.",
+    "pro": "This is a cross-functional role.",
+    "insight": "Means you need to be a good communicator."
+  },
+  {
+    "id": "45",
+    "term": "Scalability",
+    "category": "The Hunt",
+    "definition": "Ability of a system to handle growth.",
+    "basic": "Growing bigger.",
+    "pro": "We need to ensure the scalability of our code.",
+    "insight": "Huge focus in tech interviews."
+  },
+  {
+    "id": "46",
+    "term": "Agile",
+    "category": "The Hunt",
+    "definition": "Flexible, fast-paced management style.",
+    "basic": "Fast work.",
+    "pro": "Our team operates in an Agile environment.",
+    "insight": "Learn about 'Sprints' and 'Scrum'."
+  },
+  {
+    "id": "47",
+    "term": "SOP",
+    "category": "The Hunt",
+    "definition": "Standard Operating Procedure; the rulebook.",
+    "basic": "Rules.",
+    "pro": "Please follow the SOP for data entry.",
+    "insight": "Read these carefully on your first day."
+  },
+  {
+    "id": "48",
+    "term": "KPI",
+    "category": "The Hunt",
+    "definition": "Key Performance Indicator; success metrics.",
+    "basic": "How I'm measured.",
+    "pro": "What are the KPIs for this role?",
+    "insight": "Hitting these leads to bonuses and promotions."
+  },
+  {
+    "id": "49",
+    "term": "KRA",
+    "category": "The Hunt",
+    "definition": "Key Result Areas; your primary goals.",
+    "basic": "My main jobs.",
+    "pro": "My KRAs focus on customer retention.",
+    "insight": "The specific reasons you were hired."
+  },
+  {
+    "id": "50",
+    "term": "Fast-Paced",
+    "category": "The Hunt",
+    "definition": "High pressure with quick changes.",
+    "basic": "Busy office.",
+    "pro": "I enjoy working in fast-paced environments.",
+    "insight": "Often code for 'lots of overtime'."
+  },
+  {
+    "id": "51",
+    "term": "Niche",
+    "category": "The Hunt",
+    "definition": "Highly specialized area.",
+    "basic": "Specific area.",
+    "pro": "I have found my niche in cybersecurity.",
+    "insight": "Finding a niche often leads to higher salaries."
+  },
+  {
+    "id": "52",
+    "term": "Pipeline",
+    "category": "The Hunt",
+    "definition": "Sequence of tasks or candidates.",
+    "basic": "In progress.",
+    "pro": "We have several candidates in the pipeline.",
+    "insight": "Things 'in the pipeline' aren't finished yet."
+  },
+  {
+    "id": "53",
+    "term": "Bottom Line",
+    "category": "The Hunt",
+    "definition": "The most important factor or profit.",
+    "basic": "Main point.",
+    "pro": "The bottom line is that we need to cut costs.",
+    "insight": "Used to end long discussions."
+  },
+  {
+    "id": "54",
+    "term": "Redundant",
+    "category": "The Hunt",
+    "definition": "No longer needed.",
+    "basic": "Useless.",
+    "pro": "This manual process is now redundant.",
+    "insight": "Also used when jobs are cut."
+  },
+  {
+    "id": "55",
+    "term": "Freelance",
+    "category": "The Hunt",
+    "definition": "Working on contract, not permanent.",
+    "basic": "Self-employed.",
+    "pro": "I've done freelance work for three startups.",
+    "insight": "Great way to build a portfolio."
+  },
+  {
+    "id": "56",
+    "term": "White-Collar",
+    "category": "The Hunt",
+    "definition": "Professional desk-based work.",
+    "basic": "Office job.",
+    "pro": "She works in a white-collar profession.",
+    "insight": "Opposite of 'Blue-Collar' (manual labor)."
+  },
+  {
+    "id": "57",
+    "term": "Inbound/Outbound",
+    "category": "The Hunt",
+    "definition": "Tasks coming in vs. going out.",
+    "basic": "Incoming/Outgoing.",
+    "pro": "I manage inbound customer queries.",
+    "insight": "Common in sales and support roles."
+  },
+  {
+    "id": "58",
+    "term": "Attrition",
+    "category": "The Hunt",
+    "definition": "Rate at which employees leave.",
+    "basic": "Quitting rate.",
+    "pro": "The company is trying to reduce attrition.",
+    "insight": "High attrition is a 'red flag' for a job seeker."
+  },
+  {
+    "id": "59",
+    "term": "Bootcamp",
+    "category": "The Hunt",
+    "definition": "Intensive, short training.",
+    "basic": "Quick course.",
+    "pro": "I completed a 12-week coding bootcamp.",
+    "insight": "Good for fast skill-switching."
+  },
+  {
+    "id": "60",
+    "term": "Domain Knowledge",
+    "category": "The Hunt",
+    "definition": "Expertise in a specific industry.",
+    "basic": "Industry info.",
+    "pro": "I have strong domain knowledge in Fintech.",
+    "insight": "Makes you more valuable than just a 'coder'."
+  },
+  {
+    "id": "61",
+    "term": "Bandwidth",
+    "category": "The Survival",
+    "definition": "Capacity for more work.",
+    "basic": "Too busy.",
+    "pro": "I don't have the bandwidth for another task today.",
+    "insight": "Polite way to say 'No' to more work."
+  },
+  {
+    "id": "62",
+    "term": "Prioritization",
+    "category": "The Survival",
+    "definition": "Deciding what's most important.",
+    "basic": "Organizing.",
+    "pro": "I use the Eisenhower Matrix for prioritization.",
+    "insight": "Essential for avoiding burnout."
+  },
+  {
+    "id": "63",
+    "term": "Resilience",
+    "category": "The Survival",
+    "definition": "Bouncing back from failure.",
+    "basic": "Toughness.",
+    "pro": "I showed resilience after the project was cancelled.",
+    "insight": "Top skill for career longevity."
+  },
+  {
+    "id": "64",
+    "term": "Assertiveness",
+    "category": "The Survival",
+    "definition": "Speaking mind respectfully.",
+    "basic": "Being firm.",
+    "pro": "Assertiveness helps in setting clear boundaries.",
+    "insight": "Don't be aggressive; be assertive."
+  },
+  {
+    "id": "65",
+    "term": "Imposter Syndrome",
+    "category": "The Survival",
+    "definition": "Feeling like a fraud.",
+    "basic": "Self-doubt.",
+    "pro": "Many high-achievers face imposter syndrome.",
+    "insight": "Common in first 90 days of a job."
+  },
+  {
+    "id": "66",
+    "term": "Burnout",
+    "category": "The Survival",
+    "definition": "Exhaustion from stress.",
+    "basic": "Too tired.",
+    "pro": "I'm focusing on well-being to prevent burnout.",
+    "insight": "If you feel this, talk to your manager."
+  },
+  {
+    "id": "67",
+    "term": "Work-Life Integration",
+    "category": "The Survival",
+    "definition": "Work and life coexisting.",
+    "bas  { id: '33', term: "Culture Fit", category: "The Pitch", definition: "Aligning with company values.", basic: "Do I like them?", pro: "I believe my work ethic makes me a strong culture fit for this team.", insight: "Sometimes more important than technical skills." },
   { id: '34', term: "Collaborative", category: "The Pitch", definition: "Working effectively with a team.", basic: "Team player.", pro: "I thrive in a collaborative work environment.", insight: "Professional version of 'I like working with people'." },
   { id: '35', term: "Proactive", category: "The Pitch", definition: "Taking action before being told.", basic: "Doing it early.", pro: "I take a proactive approach to identifying bugs.", insight: "Managers love employees who don't wait for orders." },
   { id: '36', term: "Rebuttal", category: "The Pitch", definition: "A counter-argument in a discussion.", basic: "Disagreeing.", pro: "I have a brief rebuttal to that point.", insight: "Keep it polite in GDs: 'I hear you, however...'" },
