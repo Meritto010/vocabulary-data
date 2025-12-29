@@ -1,8 +1,4 @@
-// data/VocabularyData.js
-
-export const CATEGORIES = ["All", "The Hunt", "The Pitch", "The Deal", "The Desk", "The Survival"];
-
-export const vocabularyData = [
+[
   // 1. THE DEAL: HR, SALARY & NEGOTIATION (20 TERMS)
   { id: '1', term: "CTC (Cost to Company)", category: "The Deal", definition: "Total annual expense an employer incurs on an employee (Salary + Benefits).", basic: "My total salary is 10 Lakhs.", pro: "The offered CTC is competitive, though I'd like a breakdown of the fixed and variable components.", insight: "Insight: Your monthly 'In-Hand' is usually 15-20% lower than CTC/12 due to PF and taxes." },
   { id: '2', term: "Clawback Clause", category: "The Deal", definition: "A rule requiring an employee to return a bonus if they leave the company before a set time.", basic: "I have to return my bonus if I quit early.", pro: "I am reviewing the clawback provisions to understand the retention period.", insight: "Warning: Check this before spending your joining bonus!" },
@@ -112,4 +108,4 @@ export const vocabularyData = [
   { id: '98', term: "Professionalism", category: "The Desk", definition: "Expected behavior.", basic: "Act right.", pro: "Professionalism is expected at all times.", insight: "Dress well, speak well." },
   { id: '99', term: "Vision Statement", category: "The Desk", definition: "Company's future goal.", basic: "Future plan.", pro: "Our work aligns with the company vision.", insight: "Learn this for your HR round!" },
   { id: '100', term: "Discretion", category: "The Desk", definition: "Keeping secrets.", basic: "Private.", pro: "Discretion is vital when handling client data.", insight: "Never share office gossip." },
-];
+]
