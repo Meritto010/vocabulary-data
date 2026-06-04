@@ -112,5 +112,29 @@
     "definition": "The operational framework demonstrating how a startup can handle an influx of customers without increasing running costs.", 
     "pro": "Moving our database architecture to a secure cloud server gives us a highly viable scalability model.", 
     "hasPartner": false, "partnerName": "", "ctaText": "", "partnerCode": ""
+  },
+  { 
+    "id": "13", 
+    "term": "Communication Skills", 
+    "category": "Soft Skills", 
+    "subDomain": "Interpersonal Excellence",
+    "definition": "The ability to convey information clearly, listen effectively, and adapt your message for different professional audiences.", 
+    "pro": "Effective communication skills allow us to align our production goals across multiple departments.", 
+    "hasPartner": true, 
+    "partnerName": "Advanced Business Communication Certification", 
+    "ctaText": "Enroll for Certification", 
+    "partnerCode": "COMM_SKILLS_2026"
+  },
+  { 
+    "id": "14", 
+    "term": "Design Thinking", 
+    "category": "Entrepreneurship", 
+    "subDomain": "Business Strategy",
+    "definition": "A human-centered approach to innovation that integrates the needs of people, the possibilities of technology, and the requirements for business success.", 
+    "pro": "Applying design thinking helped us iterate on our prototype to better meet the user's specific pain points.", 
+    "hasPartner": true, 
+    "partnerName": "Entrepreneurial Innovation Lab", 
+    "ctaText": "Join Innovation Lab", 
+    "partnerCode": "DESIGN_THINK_2026"
   }
 ]
