@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "term": "Anemia",
+    "category": "Medical",
+    "definition": "A condition in which the blood doesn't have enough healthy red blood cells.",
+    "basic": "Not enough red blood in body.",
+    "pro": "The patient is showing signs of anemia due to iron deficiency.",
+    "insight": "Commonly used in clinical reports and nursing notes."
+  },
+  {
+    "id": "2",
+    "term": "Hypertension",
+    "category": "Clinical",
+    "definition": "A condition in which the force of the blood against the artery walls is too high.",
+    "basic": "High blood pressure.",
+    "pro": "Chronic hypertension can lead to severe cardiovascular complications.",
+    "insight": "Use this instead of 'high blood pressure' in formal medical charts."
+  },
+  {
+    "id": "3",
+    "term": "Triage",
+    "category": "Emergency",
+    "definition": "The process of determining the priority of patients' treatments based on the severity of their condition.",
+    "basic": "Sorting patients by need.",
+    "pro": "The emergency department established a new triage protocol.",
+    "insight": "Essential vocabulary for nurses working in ER or high-volume clinics."
+  },
+  {
+    "id": "4",
+    "term": "Asymptomatic",
+    "category": "Clinical",
+    "definition": "Presenting no symptoms of disease.",
+    "basic": "Showing no signs of sickness.",
+    "pro": "The patient remained asymptomatic throughout the observation period.",
+    "insight": "A critical term for describing patient status without physical symptoms."
+  },
+  {
+    "id": "5",
+    "term": "Acute",
+    "category": "Clinical",
+    "definition": "A condition that comes on suddenly and is often severe.",
+    "basic": "Sudden and sharp pain.",
+    "pro": "The patient was admitted with acute abdominal pain.",
+    "insight": "Distinguish between 'acute' (sudden) and 'chronic' (long-term)."
+  }
+]
