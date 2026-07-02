@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "term": "Scalability",
+    "category": "Technical",
+    "definition": "The ability of a system to handle a growing amount of work.",
+    "basic": "Growing easily.",
+    "pro": "Our cloud architecture ensures high scalability during peak traffic.",
+    "insight": "A key buzzword for any software or system architecture discussion."
+  }
+]
