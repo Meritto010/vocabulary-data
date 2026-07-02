@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "term": "Amortization",
+    "category": "Accounting",
+    "definition": "The process of spreading out a loan or intangible asset's cost over its lifespan.",
+    "basic": "Paying off debt over time.",
+    "pro": "The company’s amortization schedule significantly impacts its annual non-cash expenses.",
+    "insight": "Critical distinction from depreciation; used specifically for intangible assets."
+  },
+  {
+    "id": "2",
+    "term": "Capital Adequacy",
+    "category": "Finance",
+    "definition": "A measure of a bank's capital to its risk-weighted credit exposure.",
+    "basic": "Bank's safety buffer.",
+    "pro": "Maintaining high capital adequacy ratios is mandatory to mitigate systemic insolvency risks.",
+    "insight": "A core concept in Basel III norms and regulatory compliance for auditors."
+  },
+  {
+    "id": "3",
+    "term": "Goodwill",
+    "category": "Accounting",
+    "definition": "An intangible asset that arises when one company purchases another for a price higher than its net fair value.",
+    "basic": "Extra value of a brand.",
+    "pro": "The acquisition resulted in a substantial goodwill impairment charge on the balance sheet.",
+    "insight": "A frequent audit point regarding M&A transactions and asset valuation."
+  },
+  {
+    "id": "4",
+    "term": "Fiscal Consolidation",
+    "category": "Finance",
+    "definition": "Policies aimed at reducing government deficits and debt accumulation.",
+    "basic": "Reducing government debt.",
+    "pro": "The central bank emphasized fiscal consolidation to stabilize the sovereign credit rating.",
+    "insight": "High-level macro-economic term essential for corporate advisory and consultancy."
+  },
+  {
+    "id": "5",
+    "term": "Accrual Basis",
+    "category": "Accounting",
+    "definition": "An accounting method where revenue and expenses are recorded when they occur, regardless of when cash changes hands.",
+    "basic": "Recording based on events, not cash.",
+    "pro": "Under the accrual basis of accounting, matching principles must be strictly applied to all transactions.",
+    "insight": "The fundamental methodology for all standardized financial reporting (IFRS/GAAP)."
+  }
+]
